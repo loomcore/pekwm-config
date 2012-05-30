@@ -93,8 +93,8 @@ CmdDialog {
 }
 
 Harbour {
-    OnTop = "True"
-    MaximizeOver = "False"
+    OnTop = "False"
+    MaximizeOver = "True"
     Placement = "Right"
     Orientation = "TopToBottom"
     Head = "0"

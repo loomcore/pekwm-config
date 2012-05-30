@@ -1,178 +1,64 @@
 Rootmenu = "/" {
 	Submenu = "Development" {
-		Entry = "BeanShell (text)" { Actions = "Exec xterm -e bsh &" }
-		Entry = "BeanShell (windowed)" { Actions = "Exec xbsh &" }
-		Entry = "Eclipse" { Actions = "Exec eclipse &" }
-		Entry = "Erlang Shell" { Actions = "Exec xterm -e erl &" }
-		Entry = "GDB" { Actions = "Exec xterm -e gdb &" }
-		Entry = "Geany" { Actions = "Exec geany &" }
-		Entry = "Python (v2.6)" { Actions = "Exec xterm -e python2.6 &" }
-		Entry = "Ruby (irb1.8)" { Actions = "Exec xterm -e irb1.8 &" }
-		Entry = "SWI-Prolog" { Actions = "Exec xterm -e swipl &" }
-		Entry = "Tclsh8.4" { Actions = "Exec xterm -e tclsh8.4 &" }
-		Entry = "Tclsh8.5" { Actions = "Exec xterm -e tclsh8.5 &" }
-		Entry = "TkWish8.4" { Actions = "Exec x-terminal-emulator -e /usr/bin/wish8.4 &" }
-		Entry = "TkWish8.5" { Actions = "Exec x-terminal-emulator -e /usr/bin/wish8.5 &" }
+		Entry = "Fluid" { Actions = "Exec fluid &" }
+		Entry = "IDLE" { Actions = "Exec idle &" }
+		Entry = "Python" { Actions = "Exec xterm -e python &" }
 	}
 	Submenu = "Editors" {
-		Entry = "Character map" { Actions = "Exec gucharmap &" }
+		Entry = "AA Fire" { Actions = "Exec xterm -e aafire -driver slang &" }
 		Entry = "Emacs" { Actions = "Exec xterm -e emacs &" }
-		Entry = "Emacs 23 (text)" { Actions = "Exec xterm -e emacs23 -nw &" }
-		Entry = "Emacs 23 (X11)" { Actions = "Exec emacs23 &" }
-		Entry = "Gedit" { Actions = "Exec gedit &" }
-		Entry = "GNOME Dictionary" { Actions = "Exec gnome-dictionary &" }
 		Entry = "Nano" { Actions = "Exec xterm -e nano &" }
-		Entry = "Pico" { Actions = "Exec xterm -e pico &" }
 		Entry = "Vi" { Actions = "Exec xterm -e vi &" }
 		Entry = "Vim" { Actions = "Exec xterm -e vim &" }
-		Entry = "Xedit" { Actions = "Exec xedit &" }
 	}
 	Submenu = "Games" {
 		Submenu = "Adventure" {
-			Entry = "ScummVM" { Actions = "Exec /usr/games/scummvm &" }
-		}
-		Submenu = "Amusement" {
-			Entry = "idesk" { Actions = "Exec idesk &" }
-			Entry = "Oclock" { Actions = "Exec oclock &" }
-			Entry = "Xclock (analog)" { Actions = "Exec xclock -analog &" }
-			Entry = "Xclock (digital)" { Actions = "Exec xclock -digital -update 1 &" }
-			Entry = "Xeyes" { Actions = "Exec xeyes &" }
-			Entry = "Xlogo" { Actions = "Exec xlogo &" }
+			Entry = "Sclient" { Actions = "Exec sclient &" }
 		}
 		Submenu = "Arcade" {
-			Entry = "nInvaders" { Actions = "Exec xterm -e nInvaders &" }
+			Entry = "PacMan" { Actions = "Exec pacman &" }
 		}
-		Submenu = "Board" {
-			Entry = "Gnome Mahjongg" { Actions = "Exec mahjongg &" }
-		}
-		Submenu = "Card" {
-			Entry = "Gnome FreeCell" { Actions = "Exec sol --variation freecell &" }
-			Entry = "Gnome Solitaire Games" { Actions = "Exec sol &" }
-		}
-		Submenu = "Puzzle" {
-			Entry = "gbrainy" { Actions = "Exec gbrainy &" }
-			Entry = "Gnome Sudoku" { Actions = "Exec gnome-sudoku &" }
-			Entry = "Gnomine" { Actions = "Exec gnomine &" }
-		}
-		Submenu = "Strategy" {
-			Entry = "LinCity NG" { Actions = "Exec lincity-ng &" }
-		}
-		Entry = "rrootage" { Actions = "Exec rrootage &" }
 	}
 	Submenu = "Graphics" {
-		Entry = "Eye of GNOME" { Actions = "Exec eog &" }
-		Entry = "F-Spot" { Actions = "Exec f-spot &" }
-		Entry = "GNOME Screenshot Tool" { Actions = "Exec gnome-panel-screenshot &" }
-		Entry = "GraphicsMagick" { Actions = "Exec gm display logo: &" }
-		Entry = "ImageMagick" { Actions = "Exec display logo: &" }
-		Entry = "LibreOffice Draw" { Actions = "Exec libreoffice --draw &" }
-		Entry = "The GIMP" { Actions = "Exec gimp &" }
-		Entry = "Xditview" { Actions = "Exec xditview &" }
-		Entry = "xine Media Player" { Actions = "Exec xine &" }
+		Entry = "scanimage" { Actions = "Exec xterm -e scanimage &" }
+		Entry = "XGlyph" { Actions = "Exec xglyph &" }
+		Entry = "Xpdf" { Actions = "Exec xpdf &" }
 	}
 	Submenu = "Multimedia" {
-		Entry = "aeolus" { Actions = "Exec aeolus &" }
 		Entry = "ALSA mixer" { Actions = "Exec xterm -e alsamixer &" }
-		Entry = "amSynth" { Actions = "Exec amsynth &" }
-		Entry = "Audacious" { Actions = "Exec audacious2 &" }
-		Entry = "Audacity" { Actions = "Exec audacity &" }
-		Entry = "BEAST" { Actions = "Exec beast &" }
-		Entry = "gmix (Gnome 2.0 Mixer)" { Actions = "Exec gnome-volume-control &" }
-		Entry = "grecord (GNOME 2.0 Recorder)" { Actions = "Exec gnome-sound-recorder &" }
-		Entry = "GXINE" { Actions = "Exec gxine &" }
-		Entry = "Horgand" { Actions = "Exec horgand -b /usr/share/horgand/Default.horeb &" }
-		Entry = "Hydrogen" { Actions = "Exec hydrogen &" }
-		Entry = "JACK Control" { Actions = "Exec qjackctl &" }
-		Entry = "Jackbeat" { Actions = "Exec jackbeat &" }
-		Entry = "jamin" { Actions = "Exec jamin &" }
-		Entry = "Mixxx" { Actions = "Exec pasuspender /usr/bin/mixxx &" }
-		Entry = "mx44" { Actions = "Exec mx44 &" }
-		Entry = "nekobee" { Actions = "Exec nekobee &" }
-		Entry = "Patchage" { Actions = "Exec patchage &" }
-		Entry = "QSampler" { Actions = "Exec qsampler &" }
-		Entry = "QTractor" { Actions = "Exec qtractor &" }
-		Entry = "Rhythmbox" { Actions = "Exec rhythmbox &" }
-		Entry = "Rosegarden" { Actions = "Exec rosegarden &" }
-		Entry = "TiMidity++" { Actions = "Exec timidity -ia &" }
-		Entry = "VLC media player" { Actions = "Exec qvlc &" }
-		Entry = "zynaddsubfx" { Actions = "Exec zynaddsubfx &" }
+		Entry = "Gtv" { Actions = "Exec gtv &" }
 	}
 	Submenu = "Network" {
-		Entry = "FireFox" { Actions = "Exec firefox &" }
 		Entry = "FTP" { Actions = "Exec xterm -e ftp &" }
-		Entry = "Google Chrome" { Actions = "Exec google-chrome &" }
-		Entry = "Irssi" { Actions = "Exec xterm -e irssi &" }
-		Entry = "LFTP" { Actions = "Exec xterm -e lftp &" }
-		Entry = "Opera" { Actions = "Exec opera &" }
+		Entry = "Lynx" { Actions = "Exec xterm -e lynx &" }
+		Entry = "Mail" { Actions = "Exec xterm -e mail &" }
+		Entry = "Talk" { Actions = "Exec xterm -e talk &" }
 		Entry = "Telnet" { Actions = "Exec xterm -e telnet &" }
-		Entry = "W3m" { Actions = "Exec xterm -e w3m &" }
-		Entry = "w3m" { Actions = "Exec xterm -e w3m /usr/share/doc/w3m/MANUAL.html &" }
+		Entry = "TkVNC" { Actions = "Exec xterm -e tkvnc &" }
 	}
-	Submenu = "Office" {
-		Entry = "Evince" { Actions = "Exec evince &" }
-		Entry = "Evolution" { Actions = "Exec evolution &" }
-		Entry = "LibreOffice Calc" { Actions = "Exec libreoffice --calc &" }
-		Entry = "LibreOffice Impress" { Actions = "Exec libreoffice --impress &" }
-		Entry = "LibreOffice Math" { Actions = "Exec libreoffice --math &" }
-		Entry = "LibreOffice Writer" { Actions = "Exec libreoffice --writer &" }
-		Entry = "Xbiff" { Actions = "Exec xbiff &" }
-		Entry = "XDvi" { Actions = "Exec xdvi &" }
+	Submenu = "Science" {
+		Entry = "Gnuplot" { Actions = "Exec xterm -e gnuplot &" }
+		Entry = "R" { Actions = "Exec xterm -e R &" }
 	}
 	Submenu = "Shells" {
-		Entry = "Bash" { Actions = "Exec xterm -e bash --login &" }
 		Entry = "Dash" { Actions = "Exec xterm -e dash -i &" }
-		Entry = "DOSBox" { Actions = "Exec dosbox &" }
 		Entry = "GIT" { Actions = "Exec xterm -e git &" }
-		Entry = "Mupen64Plus" { Actions = "Exec mupen64plus &" }
-		Entry = "PCSX PlayStation Emulator" { Actions = "Exec pcsx &" }
-		Entry = "Qemulator" { Actions = "Exec qemulator &" }
-		Entry = "Rdesktop" { Actions = "Exec rdesktop &" }
-		Entry = "Sh" { Actions = "Exec xterm -e sh --login &" }
 		Entry = "Xterm" { Actions = "Exec xterm &" }
+		Entry = "XTerm (Unicode)" { Actions = "Exec uxterm &" }
 	}
 	Submenu = "System" {
-		Submenu = "Settings" {
-			Entry = "User accounts Admin" { Actions = "Exec users-admin &" }
-			Entry = "Xfontsel" { Actions = "Exec xfontsel &" }
-			Entry = "Xvidtune" { Actions = "Exec xvidtune &" }
-		}
-		Entry = "Aptitude" { Actions = "Exec xterm -e aptitude &" }
-		Entry = "Debian Task selector" { Actions = "Exec xterm -e su-to-root -c tasksel &" }
-		Entry = "DSL/PPPoE configuration tool" { Actions = "Exec xterm -e pppoeconf &" }
-		Entry = "Editres" { Actions = "Exec editres &" }
-		Entry = "Gnome Control Center" { Actions = "Exec gnome-control-center &" }
-		Entry = "GNOME Log Viewer" { Actions = "Exec gnome-system-log &" }
-		Entry = "GNOME Network Tool" { Actions = "Exec gnome-nettool &" }
-		Entry = "GNOME partition editor" { Actions = "Exec su-to-root -X -c /usr/sbin/gparted &" }
-		Entry = "GNOME system monitor" { Actions = "Exec gnome-system-monitor &" }
-		Entry = "GTK+ 2.0 Theme Switch" { Actions = "Exec gtk-theme-switch2 &" }
-		Entry = "im-switch" { Actions = "Exec xterm -e im-switch &" }
-		Entry = "OpenJDK Java 6 Console" { Actions = "Exec jconsole &" }
-		Entry = "OpenJDK Java 6 Policy Tool" { Actions = "Exec policytool &" }
-		Entry = "Opera Widget Manager" { Actions = "Exec opera-widget-manager &" }
-		Entry = "pppconfig" { Actions = "Exec xterm -e su-to-root -p root -c /usr/sbin/pppconfig &" }
-		Entry = "Pstree" { Actions = "Exec xterm -e pstree.x11 &" }
-		Entry = "Seahorse" { Actions = "Exec seahorse &" }
-		Entry = "Shares Admin" { Actions = "Exec shares-admin &" }
-		Entry = "Startup-Manager" { Actions = "Exec su-to-root -X -c /usr/sbin/startupmanager &" }
-		Entry = "Synaptic Package Manager" { Actions = "Exec gksu /usr/sbin/synaptic &" }
-		Entry = "TeXconfig" { Actions = "Exec xterm -e texconfig &" }
-		Entry = "Time Admin" { Actions = "Exec time-admin &" }
+		Entry = "pstree" { Actions = "Exec xterm -e /usr/bin/pstree.x11 &" }
+		Entry = "pstree" { Actions = "Exec xterm -e pstree &" }
+		Entry = "pstree" { Actions = "Exec xterm -e pstree.x11 &" }
 		Entry = "Top" { Actions = "Exec xterm -e top &" }
-		Entry = "Xclipboard" { Actions = "Exec xclipboard &" }
-		Entry = "Xev" { Actions = "Exec x-terminal-emulator -e xev &" }
-		Entry = "Xkill" { Actions = "Exec xkill &" }
-		Entry = "Xload" { Actions = "Exec xload &" }
-		Entry = "Xrefresh" { Actions = "Exec xrefresh &" }
 	}
 	Submenu = "Utilities" {
-		Entry = "Bc" { Actions = "Exec xterm -e bc &" }
-		Entry = "Dc" { Actions = "Exec xterm -e dc &" }
 		Entry = "Info" { Actions = "Exec xterm -e info &" }
-		Entry = "TeXdoctk" { Actions = "Exec texdoctk &" }
-		Entry = "Xcalc" { Actions = "Exec xcalc &" }
-		Entry = "Xman" { Actions = "Exec xman &" }
-		Entry = "yelp" { Actions = "Exec yelp &" }
+		Entry = "Wordview" { Actions = "Exec wordview &" }
+		Entry = "Xev" { Actions = "Exec xterm -e xev &" }
+		Entry = "XFontSel" { Actions = "Exec xfontsel &" }
+		Entry = "Xrefresh" { Actions = "Exec xrefresh &" }
+		Entry = "Xsetroot" { Actions = "Exec xsetroot &" }
 	}
 	Separator {}
 	Submenu = "PekWM" {
