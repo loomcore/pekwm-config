@@ -1,1 +1,1 @@
-dockapps/ButtonMaker/src/buttonmaker -c xdotool key alt+F3 -i ~/Pictures/haiku_icons/archivebz2.png -s 64x64
+dockapps/ButtonMaker/src/buttonmaker -c xdotool key alt+F3 -i ~/.pekwm/icons/archivebz2.png -s 64x64
