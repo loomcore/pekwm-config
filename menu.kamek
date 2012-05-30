@@ -1,0 +1,107 @@
+Rootmenu = "/" {
+	Submenu = "Development" {
+		Entry = "Fluid" { Actions = "Exec fluid &" }
+		Entry = "IDLE" { Actions = "Exec idle &" }
+		Entry = "Python" { Actions = "Exec xterm -e python &" }
+	}
+	Submenu = "Editors" {
+		Entry = "AA Fire" { Actions = "Exec xterm -e aafire -driver slang &" }
+		Entry = "Emacs" { Actions = "Exec xterm -e emacs &" }
+		Entry = "Nano" { Actions = "Exec xterm -e nano &" }
+		Entry = "Vi" { Actions = "Exec xterm -e vi &" }
+		Entry = "Vim" { Actions = "Exec xterm -e vim &" }
+	}
+	Submenu = "Games" {
+		Submenu = "Adventure" {
+			Entry = "Sclient" { Actions = "Exec sclient &" }
+		}
+		Submenu = "Arcade" {
+			Entry = "PacMan" { Actions = "Exec pacman &" }
+		}
+	}
+	Submenu = "Graphics" {
+		Entry = "scanimage" { Actions = "Exec xterm -e scanimage &" }
+		Entry = "XGlyph" { Actions = "Exec xglyph &" }
+		Entry = "Xpdf" { Actions = "Exec xpdf &" }
+	}
+	Submenu = "Multimedia" {
+		Entry = "ALSA mixer" { Actions = "Exec xterm -e alsamixer &" }
+		Entry = "Gtv" { Actions = "Exec gtv &" }
+	}
+	Submenu = "Network" {
+		Entry = "FTP" { Actions = "Exec xterm -e ftp &" }
+		Entry = "Lynx" { Actions = "Exec xterm -e lynx &" }
+		Entry = "Mail" { Actions = "Exec xterm -e mail &" }
+		Entry = "Talk" { Actions = "Exec xterm -e talk &" }
+		Entry = "Telnet" { Actions = "Exec xterm -e telnet &" }
+		Entry = "TkVNC" { Actions = "Exec xterm -e tkvnc &" }
+	}
+	Submenu = "Science" {
+		Entry = "Gnuplot" { Actions = "Exec xterm -e gnuplot &" }
+		Entry = "R" { Actions = "Exec xterm -e R &" }
+	}
+	Submenu = "Shells" {
+		Entry = "Dash" { Actions = "Exec xterm -e dash -i &" }
+		Entry = "GIT" { Actions = "Exec xterm -e git &" }
+		Entry = "Xterm" { Actions = "Exec xterm &" }
+		Entry = "XTerm (Unicode)" { Actions = "Exec uxterm &" }
+	}
+	Submenu = "System" {
+		Entry = "pstree" { Actions = "Exec xterm -e /usr/bin/pstree.x11 &" }
+		Entry = "pstree" { Actions = "Exec xterm -e pstree &" }
+		Entry = "pstree" { Actions = "Exec xterm -e pstree.x11 &" }
+		Entry = "Top" { Actions = "Exec xterm -e top &" }
+	}
+	Submenu = "Utilities" {
+		Entry = "Info" { Actions = "Exec xterm -e info &" }
+		Entry = "Wordview" { Actions = "Exec wordview &" }
+		Entry = "Xev" { Actions = "Exec xterm -e xev &" }
+		Entry = "XFontSel" { Actions = "Exec xfontsel &" }
+		Entry = "Xrefresh" { Actions = "Exec xrefresh &" }
+		Entry = "Xsetroot" { Actions = "Exec xsetroot &" }
+	}
+	Separator {}
+	Submenu = "PekWM" {
+		Entry = "Reload" { Actions = "Reload" }
+		Entry = "Restart" { Actions = "Restart" }
+		Separator {}
+		Entry = "Exit" { Actions = "Exit" }
+	}
+}
+
+WindowMenu = "Window Menu" {
+	Entry = "(Un)Stick" { Actions = "Toggle Sticky" }
+	Entry = "(Un)Shade" { Actions = "Toggle Shaded" }
+	Submenu = "Maximize" {
+		Entry = "Full" { Actions = "Toggle Maximized True True" }
+		Entry = "Horizontal" { Actions = "Toggle Maximized True False" }
+		Entry = "Vertical" { Actions = "Toggle Maximized False True" }
+	}
+	Submenu = "Fill" {
+		Entry = "Full" { Actions = "MaxFill True True" }
+		Entry = "Horizontal" { Actions = "MaxFill True False" }
+		Entry = "Vertical" { Actions = "MaxFill False True" }
+	}
+	Submenu = "Stacking" {
+		Entry = "Raise " { Actions = "Raise" }
+		Entry = "Lower" { Actions = "Lower" }
+		Entry = "Always On Top " { Actions = "Toggle AlwaysOnTop" }
+		Entry = "Always Below" { Actions = "Toggle AlwaysBelow" }
+	}
+	Submenu = "Decor" {
+		Entry = "Decor" { Actions = "Toggle DecorBorder; Toggle DecorTitlebar" }
+		Entry = "Border" { Actions = "Toggle DecorBorder" }
+		Entry = "Titlebar" { Actions = "Toggle DecorTitlebar" }
+	}
+	Submenu = "Skip" {
+		Entry = "Menus" { Actions = "Toggle Skip Menus" }
+		Entry = "Focus Toggle" { Actions = "Toggle Skip FocusToggle" }
+		Entry = "Snap" { Actions = "Toggle Skip Snap" }
+	}
+	Entry = "Iconify " { Actions = "Set Iconified" }
+	Entry = "Manual Action" { Actions = "ShowCmdDialog" }
+	Separator {}
+	Entry = "Close" { Actions = "Close" }
+	Entry = "Kill " { Actions = "Kill " }
+}
+
