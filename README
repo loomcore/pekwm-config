@@ -1,3 +1,3 @@
 loomcore's PekWM config: attempts to emulate the BeOS/Haiku interface as best it can.
-Uses a modified version of the `Benu'theme by vnils (see http://goo.gl/nG3mM)
+Uses a modified version of the `Benu' theme by vnils (see http://goo.gl/nG3mM)
 Also including ButtonMaker and wmCalClock to simulate the BeOS dock in PekWM's harbour.

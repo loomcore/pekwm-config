@@ -75,11 +75,12 @@ Global {
     # Custom
         KeyPress = "XF86AudioLowerVolume" { Actions = "Exec amixer -c 0 set Master 2dB-" }
         KeyPress = "XF86AudioRaiseVolume" { Actions = "Exec amixer -c 0 set Master 2dB+" }
-        KeyPress = "Mod1 F1" { Actions = "Exec gnome-terminal" }
+        KeyPress = "Mod1 F1" { Actions = "Exec urxvt" }
         KeyPress = "Mod1 F4" { Actions = "Close" }
         KeyPress = "Mod4" { Actions = "ShowMenu Root" }
         KeyPress = "Mod1 F3" { Actions = "ShowMenu Root" }
-        KeyPress = "Print" { Actions = "Exec gnome-screenshot" }
+        KeyPress = "Print" { Actions = "Exec scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/scrot/'" }
+	KeyPress = "Ctrl Mod1 L" { Actions = "Exec xlock -mode noof" }
 
 # - - ----------------------------------------------- - -
 # CHAINS. These give you access to just about everything.
