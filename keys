@@ -79,7 +79,8 @@ Global {
         KeyPress = "Mod1 F4" { Actions = "Close" }
         KeyPress = "Mod4" { Actions = "ShowMenu Root" }
         KeyPress = "Mod1 F3" { Actions = "ShowMenu Root" }
-        KeyPress = "Print" { Actions = "Exec gnome-screenshot" }
+        KeyPress = "Print" { Actions = "Exec scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/Pictures/scrot/'" }
+	KeyPress = "Ctrl Mod1 L" { Actions = "Exec xlock -mode noof" }
 
 # - - ----------------------------------------------- - -
 # CHAINS. These give you access to just about everything.
