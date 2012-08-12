@@ -20,7 +20,7 @@ MoveResize {
 Screen {
     Workspaces = "4"
     WorkspacesPerRow = "4"
-	WorkspaceNames = "Workspace 1;Workspace 2;Workspace 3;Workspace 4"
+    WorkspaceNames = "Workspace 1;Workspace 2;Workspace 3;Workspace 4"
     ShowFrameList = "True"
     ShowStatusWindow = "True"
     ShowStatusWindowCenteredOnRoot = "False"

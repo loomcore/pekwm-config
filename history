@@ -6,3 +6,12 @@ gnome-control-center
 gimp
 xclock
 chrome
+<<<<<<< HEAD
+chromium
+emacs
+qjackctl
+wicd-gtk
+
+firefox
+=======
+>>>>>>> f028499a88cb651d232c568eaac3f928c50d09d8
