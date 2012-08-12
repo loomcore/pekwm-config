@@ -21,7 +21,8 @@ FrameTitle {
 	Motion = "1" { Threshold = "4"; Actions = "Raise; Move" }
 	Motion = "Mod1 1" { Threshold = "4"; Actions = "Raise; Move" }
 	Motion = "Mod4 1" { Threshold = "4"; Actions = "Raise; Move" }
-	Motion = "2" { Threshold = "4"; Actions = "GroupingDrag True" }
+	# Motion = "2" { Threshold = "4"; Actions = "GroupingDrag True" }
+	Motion = "3" { Threshold = "4"; Actions = "GroupingDrag True" }
 	Motion = "Mod1 3" { Actions = "Resize" }
 	# Remove the following line if you want to use click to focus.
 	Enter = "Any Any" { Actions = "Focus" }
