@@ -20,16 +20,16 @@
 */
 
 Require {
-	Templates = "True"
+        Templates = "True"
 }
 
 /*
  Remove decor of customize toolbar window of mozilla firefox.
  */
 Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
-	ApplyOn = "Start New TransientOnly"
-	Border = "False"
-	Titlebar = "False"
+        ApplyOn = "Start New TransientOnly"
+        Border = "False"
+        Titlebar = "False"
 }
 
 /*
@@ -40,10 +40,10 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  windows show up, also to so called transient windows.
 */
 # Property = "^mozilla-bin,^Mozilla-bin,,^Saving" {
-# 	ApplyOn = "New Transient"
-# 	Group = "moz-dl" { Size = "10" }
-# 	FrameGeometry = "+0+0"
-# 	Layer = "Below"
+#       ApplyOn = "New Transient"
+#       Group = "moz-dl" { Size = "10" }
+#       FrameGeometry = "+0+0"
+#       Layer = "Below"
 # }
 
 
@@ -52,8 +52,8 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  property. Start these windows on workspace two.
 */
 # Property = "^Mozilla,^navigator:browser" {
-# 	ApplyOn = "Start New Workspace"
-# 	Workspace = "2"
+#       ApplyOn = "Start New Workspace"
+#       Workspace = "2"
 # }
 
 
@@ -64,8 +64,8 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  autoproperties apply on every pekwm start or when a new window is opened.
 */
 # Property = "^dillo,^Dillo" {
-# 	ApplyOn = "Start New"
-# 	Group = "dillo" { Size = "0"; Behind = "True" }
+#       ApplyOn = "Start New"
+#       Group = "dillo" { Size = "0"; Behind = "True" }
 # }
 
 
@@ -78,17 +78,17 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  xmms playlist and equalizer are transients).
 */
 # Property = ".*,^xmms" {
-# 	ApplyOn = "Start New Transient"
-# 	Layer = "Desktop"
-# 	Sticky = "True"
-# 	Skip = "Menus FocusToggle Snap"
+#       ApplyOn = "Start New Transient"
+#       Layer = "Desktop"
+#       Sticky = "True"
+#       Skip = "Menus FocusToggle Snap"
 # }
 
 
 /*
  Remove Gimp windows from the menus, only show the main toolbox window.
  Use the WM_WINDOW_ROLE to tell the difference between gimp windows.
- 
+
  First make sure the toolbox window doesn't get confused with the rest
  of the windows. This just tells pekwm to ignore any matches for the
  toolbox later on. Without this, the toolbox would match with "the rest
@@ -102,17 +102,17 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  it above other windows anyways. Don't show the window in pekwm menus.
 */
 # Property = "^gimp,^Gimp,gimp-crop-tool" {
-# 	ApplyOn = "Start New"
-# 	Layer = "OnTop"
-# 	FrameGeometry = "+0+0"
-# 	Skip = "Menus"
+#       ApplyOn = "Start New"
+#       Layer = "OnTop"
+#       FrameGeometry = "+0+0"
+#       Skip = "Menus"
 # }
 /*
  The rest of the gimp windows should not show in pekwm menus eather.
 */
 # Property = ".gimp,^Gimp" {
-# 	ApplyOn = "Start New"
-# 	Skip = "Menus";
+#       ApplyOn = "Start New"
+#       Skip = "Menus";
 # }
 
 
@@ -120,10 +120,10 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  This should start making sense to you by now.
 */
 # Property = "^gkrellm,^Gkrellm" {
-# 	ApplyOn = "Start New"
-# 	Sticky = "True"
-# 	Skip = "Menus FocusToggle"
-# 	Layer = "Desktop"
+#       ApplyOn = "Start New"
+#       Sticky = "True"
+#       Skip = "Menus FocusToggle"
+#       Layer = "Desktop"
 # }
 
 
@@ -135,78 +135,78 @@ Property = "^(gecko|Gecko|firefox-bin),^Firefox-bin,,^Customize Toolbar\$" {
  addition to its position.
 */
 # Property = "^xclock,^XClock" {
-# 	ApplyOn = "Start New"
-# 	ClientGeometry = "120x137+0-137"
-# 	Border = "False"; Titlebar = "False"
-# 	Sticky = "True"
-# 	Layer = "Desktop"
-# 	Skip = "Menus FocusToggle Snap"
+#       ApplyOn = "Start New"
+#       ClientGeometry = "120x137+0-137"
+#       Border = "False"; Titlebar = "False"
+#       Sticky = "True"
+#       Layer = "Desktop"
+#       Skip = "Menus FocusToggle Snap"
 # }
-# 
+#
 # Property = "^xload,^XLoad" {
-# 	ApplyOn = "Start New"
-# 	ClientGeometry = "560x137+120-137"
-# 	Border = "False"; Titlebar = "False"
-# 	Sticky = "True"
-# 	Layer = "Desktop"
-# 	Skip = "Menus FocusToggle Snap"
+#       ApplyOn = "Start New"
+#       ClientGeometry = "560x137+120-137"
+#       Border = "False"; Titlebar = "False"
+#       Sticky = "True"
+#       Layer = "Desktop"
+#       Skip = "Menus FocusToggle Snap"
 # }
-# 
+#
 # Property = "^xbiff,^XBiff" {
-# 	ApplyOn = "Start New"
-# 	ClientGeometry = "120x137-120-137"
-# 	Border = "False"; Titlebar = "False"
-# 	Sticky = "True"
-# 	Layer = "Desktop"
-# 	Skip = "Menus FocusToggle Snap"
+#       ApplyOn = "Start New"
+#       ClientGeometry = "120x137-120-137"
+#       Border = "False"; Titlebar = "False"
+#       Sticky = "True"
+#       Layer = "Desktop"
+#       Skip = "Menus FocusToggle Snap"
 # }
 
 
 // End of autoproperties. -------------------------
 
 TypeRules {
-	/*
-	 Desktop windows such as nautilus window in gnome. These should
-	 cover the root window and be below all other windows. Also they
-	 should not be included in the menu and in snapping.
-	 */
- 	Property = "DESKTOP" {
-		FrameGeometry = "0x0+0+0"
-		Titlebar = "False"
-		Border = "False"
-		Sticky = "True"
-		Skip = "FocusToggle Menus Snap"
-		Layer = "Desktop"
-		Focusable = "False"
-	}
-	Property = "DOCK" {
-		Titlebar = "False"
-		Border = "False"
-		Sticky = "True"
-		Layer = "Dock"
-		Skip = "FocusToggle Menus"
-		Focusable = "False"
-	}
-	Property = "TOOLBAR"  {
-		Skip = "FocusToggle Menus Snap"
-	}
-	Property = "MENU"  {
-		Titlebar = "False"
-		Border = "False"
-		Skip = "FocusToggle Menus Snap"
-	}
-	Property = "UTILITY"  {
-	}
-	Property = "SPLASH"  {
-		Titlebar = "False"
-		Border = "False"
-		Layer = "OnTop"
-	}
-	Property = "DIALOG"  {
-		Layer = "OnTop"
-	}
-	Property = "NORMAL"  {
-	}
+        /*
+         Desktop windows such as nautilus window in gnome. These should
+         cover the root window and be below all other windows. Also they
+         should not be included in the menu and in snapping.
+         */
+        Property = "DESKTOP" {
+                FrameGeometry = "0x0+0+0"
+                Titlebar = "False"
+                Border = "False"
+                Sticky = "True"
+                Skip = "FocusToggle Menus Snap"
+                Layer = "Desktop"
+                Focusable = "False"
+        }
+        Property = "DOCK" {
+                Titlebar = "False"
+                Border = "False"
+                Sticky = "True"
+                Layer = "Dock"
+                Skip = "FocusToggle Menus"
+                Focusable = "False"
+        }
+        Property = "TOOLBAR"  {
+                Skip = "FocusToggle Menus Snap"
+        }
+        Property = "MENU"  {
+                Titlebar = "False"
+                Border = "False"
+                Skip = "FocusToggle Menus Snap"
+        }
+        Property = "UTILITY"  {
+        }
+        Property = "SPLASH"  {
+                Titlebar = "False"
+                Border = "False"
+                Layer = "OnTop"
+        }
+        Property = "DIALOG"  {
+                Layer = "OnTop"
+        }
+        Property = "NORMAL"  {
+        }
 }
 
 /*
@@ -224,12 +224,12 @@ TypeRules {
  in the beginning of the title just as a show how.
 */
 # TitleRules {
-# 	Property = "^dillo,^Dillo" {
-# 		Rule = "/Dillo: (.*)/\\1 - dillo/"
-# 	}
-# 	Property = "^firefox-bin,^Firefox-bin" {
-# 		Rule = "/(.*) - Mozilla Firefox/MF: \\1/"
-# 	}
+#       Property = "^dillo,^Dillo" {
+#               Rule = "/Dillo: (.*)/\\1 - dillo/"
+#       }
+#       Property = "^firefox-bin,^Firefox-bin" {
+#               Rule = "/(.*) - Mozilla Firefox/MF: \\1/"
+#       }
 # }
 
 
@@ -245,15 +245,15 @@ TypeRules {
  first, and wmnd will get placed in the centre.
 */
 # Harbour {
-# 	Property = "^obpager,^obpager" {
-# 		Position = "-1"
-# 	}
-# 	Property = ".*,.*cpuload" {
-# 		Position = "1"
-# 	}
-# 	Property = ".*,^wmnd" {
-# 		Position = "0"
-# 	}
+#       Property = "^obpager,^obpager" {
+#               Position = "-1"
+#       }
+#       Property = ".*,.*cpuload" {
+#               Position = "1"
+#       }
+#       Property = ".*,^wmnd" {
+#               Position = "0"
+#       }
 # }
 
 
@@ -270,8 +270,7 @@ TypeRules {
  supports it.
 */
 # DecorRules {
-# 	Property = "^term,^xterm" {
-# 		Decor = "TERM"
-# 	}
+#       Property = "^term,^xterm" {
+#               Decor = "TERM"
+#       }
 # }
-

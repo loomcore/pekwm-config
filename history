@@ -6,11 +6,16 @@ gnome-control-center
 gimp
 xclock
 chrome
-chromium
-emacs
-qjackctl
-wicd-gtk
 flobopuyo
 snes9x-gtk
-firefox
 emacs /home/phil/dev/prolog/sudokunt/sudokunt.pl
+wqjac
+emacs dev/clojure/orc/src/orc/core.clj
+qjackctl
+chromium
+wicd-gtk
+firefox
+emacs --fullscreen
+emac
+emacs -fs
+emacs

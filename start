@@ -24,4 +24,4 @@ cp -r ~/.idesktop.pekwm ~/.idesktop
 idesk &
 GTK2_RC_FILES=/home/phil/.icewm/trayicon.rc gnome-volume-control-applet &
 GTK2_RC_FILES=/home/phil/.icewm/trayicon.rc nm-applet &
-/home/phil/.fehbg.pekwm
+/home/phil/.fehbg.pekwm &
